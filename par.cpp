@@ -11,6 +11,7 @@ int main()
     std::vector<uint8_t> data;
     size_t total = 1024ull*1024ull*128;
     data.reserve(total);
+    data.resize(total);
     for( auto bytes=4096; bytes<total; bytes = bytes * 2 )
     {
         size_t cycles = total / bytes;
