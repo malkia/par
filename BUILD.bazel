@@ -1,0 +1,5 @@
+cc_binary(
+    name = "par",
+    srcs = [ "par.cpp" ],
+    linkopts = ["-ltbb"],
+)
